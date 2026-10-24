@@ -16,7 +16,7 @@ The main objectives of this project are:
 ### 1.2 Estimating (Pi)
 We can analyze the first quadrant: a quarter circle of radius 1 is placed inside a unit square. The square has area 1, while the quarter circle has area ($\frac{pi}{4}$).
 
-Random points ((x, y)) are generated inside the square. A point is inside the quarter circle when:
+Random points (x, y) are generated inside the square. A point is inside the quarter circle when:
 $x^2 + y^2 <= 1$
 
 The quarter circle has area ($\frac{pi}{4}$). The square has area 1.
@@ -32,25 +32,25 @@ For ($y = x^k$), random points are generated in the unit square. A point is cons
 
 Our 3 runs (estimate / error):
 
-Run 1
+**Run 1**
       | n   | estimate | error|
-      |-----|-----------|-----|
+      |:-----|:-----------|:-----|
       |10    |3.20000    |0.05841|
-     |100    |3.12000   | 0.02159|
+     |100    |3.12000 | 0.02159|
     |1000    |3.16400   | 0.02241|
   | 10000   | 3.15680   | 0.01521|
  | 100000    |3.13968   | 0.00191|
 
-Run 2
+**Run 2**
       | n  | estimate     | error|
-      |-----|-----------|-----|
+      |:-----|:-----------|:-----|
      | 10  |  3.20000   | 0.05841|
     | 100   | 3.44000   | 0.29841|
    | 1000   | 3.20800  |  0.06641|
   | 10000   | 3.16040 |   0.01881|
  | 100000   | 3.14788 |   0.00629|
 
-Run 3
+**Run 3**
        |n  | estimate    |  error|
        |-----|-----------|-----|
       |10   | 2.80000   | 0.34159|
@@ -59,7 +59,7 @@ Run 3
   | 10000   | 3.10640   | 0.03519|
  | 100000  |  3.14000   | 0.00159
 
-### Task 3: Area Under y = x^k (n = 100,000)
+### Task 3: Area Under $y = x^k$ (n = 100,000)
 
 | Curve | Estimate | Analytical Exact Value |
 | :--- | :---: | :---: |
