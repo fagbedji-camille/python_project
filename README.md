@@ -14,12 +14,12 @@ The main objectives of this project are:
 5. To investigate how the number of random points affects accuracy.
 
 ### 1.2 Estimating ($\pi$)
-We can analyze the first quadrant: a quarter circle of radius 1 is placed inside a unit square. The square has area 1, while the quarter circle has area ($\frac{pi}{4}$).
+We can analyze the first quadrant: a quarter circle of radius 1 is placed inside a unit square. The square has area 1, while the quarter circle has area ($\frac{\pi}{4}$).
 
 Random points (x, y) are generated inside the square. A point is inside the quarter circle when:
 $x^2 + y^2 <= 1$
 
-The quarter circle has area ($\frac{pi}{4}$). The square has area 1.
+The quarter circle has area ($\frac{\pi}{4}$). The square has area 1.
 
 ### 1.3 Estimating Area Under $y = x^k$
 For ($y = x^k$), random points are generated in the unit square. A point is considered "under the curve" if $y <= x^k$.
@@ -80,6 +80,8 @@ Our 3 runs (estimate / error):
 ### Q: What happens when n gets bigger? 
 The estimates were generally close to the expected values, although differences occurred because the points were generated randomly. Increasing the sample size generally improved accuracy with the typical error decreasing approximately as; 
        $\frac{1}{\sqrt(n)}$.
+
+       
  **Is a bigger n always better?**
   Yes.Because the estimates usually become more reliable, so using bigger($n$) is generally better when greater accuracy is needed. However, the improvement becomes smaller as n increases, and bigger samples require more computation time and memory. A larger sample size reduces variance and bounds the standard error, making the estimates progressively more reliable.
   * **In individual instances**: Bigger n does not guarantee a smaller error in every individual run because the results are random.
