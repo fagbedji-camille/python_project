@@ -1,7 +1,7 @@
-# Project 3: Estimating Pi and Curve Areas with Random Points
+# Project 3: Estimating $\pi$ and Curve Areas with Random Points
 
 ## 1. Introduction and Theoretical Background
-This project focuses on estimating (Pi) and calculating the area under the curve ($y = x^k$) for x from 0 to 1. In this project, random points are generated and tested to estimate values that can also be calculated mathematically. For example, random points are selected from a unit square, and their locations are checked to determine whether they fall inside a quarter circle or below a given curve. The project also investigates how changing random points affects the accuracy and reliability of the estimates.
+This project focuses on estimating ($\pi$) and calculating the area under the curve ($y = x^k$) for x from 0 to 1. In this project, random points are generated and tested to estimate values that can also be calculated mathematically. For example, random points are selected from a unit square, and their locations are checked to determine whether they fall inside a quarter circle or below a given curve. The project also investigates how changing random points affects the accuracy and reliability of the estimates.
 
 The project is implemented in Python using the built-in random module.
 
@@ -13,7 +13,7 @@ The main objectives of this project are:
 4. To calculate the absolute error.
 5. To investigate how the number of random points affects accuracy.
 
-### 1.2 Estimating (Pi)
+### 1.2 Estimating ($\pi$)
 We can analyze the first quadrant: a quarter circle of radius 1 is placed inside a unit square. The square has area 1, while the quarter circle has area ($\frac{pi}{4}$).
 
 Random points (x, y) are generated inside the square. A point is inside the quarter circle when:
@@ -28,7 +28,7 @@ For ($y = x^k$), random points are generated in the unit square. A point is cons
 
 ## 2. Example Run Results
 
-### Task 2: Pi Estimation Table (Standard Outputs)
+### Task 2: $\pi$ Estimation Table (Standard Outputs)
 
 Our 3 runs (estimate / error):
 
@@ -79,9 +79,9 @@ Our 3 runs (estimate / error):
 
 ### Q: What happens when n gets bigger? 
 The estimates were generally close to the expected values, although differences occurred because the points were generated randomly. Increasing the sample size generally improved accuracy with the typical error decreasing approximately as; 
-       ${1/\sqrt(n)}$.
+       $\frac{1}{\sqrt(n)}$.
  **Is a bigger n always better?**
-  Yes.Because the estimates usually become more reliable, so using bigger(n) is generally better when greater accuracy is needed. However, the improvement becomes smaller as n increases, and bigger samples require more computation time and memory. A larger sample size reduces variance and bounds the standard error, making the estimates progressively more reliable.
+  Yes.Because the estimates usually become more reliable, so using bigger($n$) is generally better when greater accuracy is needed. However, the improvement becomes smaller as n increases, and bigger samples require more computation time and memory. A larger sample size reduces variance and bounds the standard error, making the estimates progressively more reliable.
   * **In individual instances**: Bigger n does not guarantee a smaller error in every individual run because the results are random.
 
 ## 4. Challenges
